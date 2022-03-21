@@ -22,7 +22,7 @@ public class Rook extends ChessPiece {
 
 		Position p = new Position(0, 0);
 
-		// verifica posição acima
+		// verifica posição a cima
 		p.setValues(position.getRow() - 1, position.getColumn());
 
 		while (getBoard().positionExists(p) && !getBoard().thereIsApiece(p)) {
@@ -55,7 +55,7 @@ public class Rook extends ChessPiece {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
 		
-		// verifica posição para baixo
+		// verifica posição a baixo
 		p.setValues(position.getRow() + 1, position.getColumn());
 
 		while (getBoard().positionExists(p) && !getBoard().thereIsApiece(p)) {
